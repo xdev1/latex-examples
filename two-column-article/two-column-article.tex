@@ -1,0 +1,48 @@
+% Version 1: Using KOMA-Script
+\documentclass[10pt,a4paper,notitlepage,oneside,twocolumn,toc=sectionentrywithdots]{scrartcl}
+
+% Version 2: Using standard article document class
+%\documentclass[10pt,a4paper,notitlepage,oneside,twocolumn]{article}
+%\usepackage{tocloft}
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage[text={180mm,254mm},centering]{geometry}
+
+\pagestyle{headings}
+\setlength{\columnsep}{0.5cm}
+
+\begin{document}
+
+\title{Some interesting stuff}
+\author{Alan J. Smithee}
+\date{June 2021}
+\maketitle
+
+\tableofcontents
+
+% Use \input instead of \include to prevent forced page breaks
+% \input{sections/01_section1.tex}
+% \input{sections/02_section2.tex}
+% \input{sections/03_section3.tex}
+% \input{sections/04_section4.tex}
+% \input{sections/05_section5.tex}
+
+\section{Preface}
+\lipsum[1-2]
+
+\section{Description of the subject}
+\lipsum[3-8]
+
+\section{Analysis}
+\subsection{Notes}
+\lipsum[9-10]
+
+\subsection{Results}
+\lipsum[11-12]
+
+\section{Critical reception}
+\lipsum[13-16]
+
+\end{document}
